@@ -15,3 +15,12 @@ print(B.union(A))
 print(A.isdisjoint(B))
 print(A.symmetric_difference(B))
 del it_companies
+st = set(age)
+if len(age) > len(st):
+    print("The list has duplicate ages")
+
+st=" am a teacher and I love to inspire and teach people."
+stw=[st.split]
+str=set(stw)
+print(st)
+print(str)
