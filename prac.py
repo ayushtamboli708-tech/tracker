@@ -1,11 +1,16 @@
-def add_num(*args):
-    print("here")
-    sum=0
-    for i in args:
-        sum +=i
-        print("here2")
-    return sum
-    print("here3")
-
-print(add_num(2,4,6,9))
-print("here4")
+def check_season(month):
+    summar = ["march","april","june","may"]
+    winter = ["november","december","january","frburary"]
+    spring = ["augast","september","octuber","july"]
+    if month in summar:
+        return "summer"
+    elif month in winter:
+        return "winter"
+    else :
+        return spring
+try:
+    mon = input("enter the month  ")
+except error as err:
+    print(f"error '{err}")
+else:        
+    print(check_season(mon))        
