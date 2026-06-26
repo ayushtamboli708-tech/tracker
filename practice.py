@@ -24,3 +24,6 @@ print(type(list_into_tuples[0]))
 countries = [[('Finland', 'Helsinki')], [('Sweden', 'Stockholm')], [('Norway', 'Oslo')]]
 list_into_dict = [dict(sub) for sub in countries]
 print(type(list_into_dict[0]), list_into_dict)
+names = [[('Asabeneh', 'Yetayeh')], [('David', 'Smith')], [('Donald', 'Trump')], [('Bill', 'Gates')]]
+pri = [f"{first} {last}" for first, last in [sub[0] for sub in names]]
+print(pri)
